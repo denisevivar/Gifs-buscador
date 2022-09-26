@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Gifs</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body> 
+    <main>
+
+        <section class="trending-section">
+            <div class="title">
+                <h2>Gifs más populares</h2>
+            </div>
+
+            <div id="trending-results"></div>
+
+        </section>  
+
+        <section class="searching-section">
+
+            <div class="title">
+                <h2>Busca gifs</h2>
+            </div>
+
+            <div class="search-bar">
+                <div class="search-elements">
+                    <div class="search-container">
+                        <input id="search-input" type="text" name="search-input" placeholder="Ingresa tu búsqueda">
+                        <a id="search-btn"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="not-displayed"></section>
+
+        <div class="error-container not-displayed">
+            <div>
+                <p>Intenta con otra búsqueda.</p>
+            </div>
+        </div> 
+          
+    </main> 
+
+    <script src="/js/generics.js"></script>
+    <script src="/js/getGifs.js"></script>
+    <script src="/js/trendingCards.js"></script>
+     
+</body>
+</html>

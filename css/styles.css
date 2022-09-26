@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+}
+
+.trending-section {
+  background-color: #F3F5F8;
+  position: relative;
+  width: 100%;
+  padding: 2em 0 13em 0;
+}
+
+#trending-results, #results {
+  padding: 0 7%;
+}
+
+.title {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.title h2, #results h2 {
+  color: #e52ea8;
+  margin: 1.5em;
+  font-family: "Montserrat";
+  line-height: 30px;
+  text-align: center;
+}
+
+.grid-results {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2% 8%;
+}
+
+.card img {
+  width: 100%;
+  height: 8em;
+  margin: auto;
+}
+
+
+.searching-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+.search-bar {
+  width: 70%;
+}
+
+.search-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #444446;
+  border-radius: 30px;
+}
+.search-elements #search-input {
+  font-family: "Montserrat", "Sans-serif";
+  font-size: 0.8em;
+  width: 85%;
+  height: 100%;
+  margin: 0.5em 1em;
+  border: none;
+}
+.search-elements #search-input:focus {
+  outline: none;
+}
+
+#search-btn{
+  color: #444446;
+  cursor: pointer;
+  margin: 0.5em 1em;
+}
+
+.search-container {
+  width: 80%;
+  height: 100%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#results {
+  margin-bottom: 2em;
+}
+
+.error-container {
+  width: 90%;
+  margin: 0 auto 3em auto;
+}
+
+.error-container p {
+  font-family: "Montserrat";
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.not-displayed {
+  display: none;
+}
+
+.is-displayed {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .grid-results {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2% 3%;
+  }
+
+  .card img {
+    height: 14em;
+  }
+
+  .trending-section {
+    padding: 2em 0 9em 0;
+  }
+
+
+  .searching-section {
+    width: 40%;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+}
+
